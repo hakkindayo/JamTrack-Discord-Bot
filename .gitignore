@@ -1,0 +1,6 @@
+.env
+*.env
+tracks_config.json
+tracks.config.json
+__pycache__/
+data/

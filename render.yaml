@@ -1,0 +1,16 @@
+services:
+  - type: worker
+    name: jamtrack-bot
+    runtime: docker
+    plan: starter
+    disk:
+      name: bot-data
+      mountPath: /data
+      sizeGB: 5
+    envVars:
+      - key: DISCORD_TOKEN
+        sync: false
+      - key: WEBHOOK_URL
+        sync: false
+      - key: AUDIO_WEBHOOK_URL
+        sync: false
